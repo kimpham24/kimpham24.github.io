@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 1 header and 1 body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <title>Kim Pham's Personal Portfolio</title>
+</head>
+<body class= "nav-1-on">
+    <!-- Navigation Bar -->
+    <div class="container-1">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-1" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-2" href="./subpages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-3" href="./subpages/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-4" href="./subpages/resume.html">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Introduction for homepage -->
+        <main class="main-home">
+            <h1 class="description-home">hello,</h1>
+            <h1 class="name-home">it's <em>kim pham</em></h1>
+            <p>Welcome to my digitial portfolio where I can show you who I am and share my latest works.</p>
+            <p>Feel free to navigate through my <a href="./subpages/about.html"><em>About</em></a> page to learn more about me, explore a collection of my <a href= "./subpages/projects.html"><em>Projects</em></a>, 
+                or take a look at my experiences and skills through my <a href="./subpages/resume.html"><em>Resume</em></a>.</p>
+            <p>If you are curious about anything, don't hesitate to <a href="#contact"><em>Contact</em></a> me!</p>
+            <div class="line-home"></div>
+        </main>
+        <!-- Image for homepage -->
+        <div>
+            <img class="img-home" src="./images/profilepic.png" alt="Profile Picture of Person">
+        </div>
+        <!-- Contact form section -->
+        <div class="contact-container" id="contact">
+            <h1 class="contactme">Contact Me</h1>
+            <form action="https://getform.io/f/qblojdna" method="post">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="fullname" id="name" required>
+                <br><br>
+                <label for="emailaddress">Email Address</label>
+                <br>
+                <input type="email" name="email" id="emailaddress" required>
+                <br><br>
+                <label for="message">Comments or Questions?</label>
+                <br>
+                <textarea name="messaging" id="message" required></textarea>
+                <input class="submit-btn" type="submit" value="Submit">
+                <input class="clear-btn" type="reset" value="Clear">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

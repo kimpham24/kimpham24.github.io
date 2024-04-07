@@ -1,0 +1,436 @@
+/* Format across all pages (including nav bar) */
+
+body {
+    background-color: #95aabf;
+    margin: auto;
+} 
+
+header {
+    display: block;
+    grid-column: span 3;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+nav {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav > ul > li {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1em auto;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    color: #95aabf;
+}
+
+h1 {
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: auto;
+    font-size: 80px;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+   color: #56636f;
+}
+
+/* Highlight current page in nav bar */
+
+body.nav-1-on a.nav-1, body.nav-2-on a.nav-2, body.nav-3-on a.nav-3, body.nav-4-on a.nav-4  { 
+    color: #95aabf;
+    text-decoration: underline;
+} 
+
+/* Homepage */
+
+/* Grid for homepage */
+
+.container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    min-height: 50vh;
+}
+
+/* Divide first portion of homepage with description and image */
+
+.main-home {
+    grid-column: span 2;
+    padding: 2em;
+    margin: 0;
+    background-color: #95aabf;
+}
+
+h1.description-home {
+    text-align: left;
+    margin: 3vh auto 0;
+}
+
+h1.name-home {
+    margin-bottom: .5vh;
+    color: white;
+    text-align: left;
+    margin-inline-start: 5vw; 
+}
+
+.line-home {
+    border-bottom: 1px solid white;
+    margin-top: 2vh;
+    width: 20%;
+}
+
+.img-home {
+    height: 50vh;
+    border-radius: 50%;
+    margin: 3.5vh auto;
+    padding: 2em;
+}
+
+/* Second portion with contact submission box */
+
+.contact-container {
+    display: block;
+    grid-column: span 3;
+    background-color: white;
+    color: white;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+h1.contactme {
+    padding: 1vh;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+}
+
+/* Format of submission box element */
+
+label {
+    color: black;
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 1vh 1vw;
+    
+}
+
+input {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin: .5vh 1vw;
+    height: 3vh;
+    text-align: justify;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+textarea {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    width: 90vw;
+    height: 15vh;
+    font-size: 20px;
+    resize: none;
+    margin: .5vh 1vw;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+/* Format of submit and clear buttons for submission */
+
+.submit-btn, .clear-btn {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    padding: auto 1vw;
+    height: auto;
+    cursor: pointer;
+    background-color: white;
+    left: 85%;
+    position: relative;
+}
+
+.clear-btn:hover, .submit-btn:hover {
+    background-color: #e7e7e7;
+}
+
+
+
+/* About me subpage */
+
+/* Grid for homepage */
+
+.container-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    min-height: 50vh;
+}
+
+/* Divide first portion of about me subpage with image and description */
+
+.main-about {
+    grid-column: span 3;
+    padding: 2em;
+    margin: 0;
+    background-color: #95aabf;
+}
+
+.img-about {
+    max-width: 30vw; 
+    height: auto;
+    padding-top: 1em;
+    padding-right: 2em;
+    float: left;
+}
+
+.description-about {
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: .5em;
+}
+
+/* Format for buttons: more in the about me subpage & linkedin */
+
+.more-btn {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    padding: 1.5vh 1.5vw;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    margin-right: 1em;
+}
+
+.more-btn:hover {
+    background-color: #56636f;
+    color: white;
+}
+
+.linkedin-btn {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    padding: 1.5vh 1.5vw;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+}
+
+.linkedin-btn:hover {
+    background-color: #56636f;
+    color: white;
+}
+
+/* Divide third portion of about me subpage with description and image of VSA */
+
+.vsa-container {
+    grid-column: span 3;
+    margin: 0;
+    padding: 2em;
+}
+
+.vsa {
+    position: relative;
+    display: inline-block;
+}
+
+.description-vsa {
+    position: absolute;
+    top: 75%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffff; 
+    padding: 1.5em 2em; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.img-vsaabout {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+}
+
+/* Divide fourth portion of about me subpage with description and image of Korea */
+
+.korea-container {
+    grid-column: span 3;
+    margin: 0;
+    padding: 2em;
+}
+
+.description-korea {
+    font-size: 20px;
+    padding-bottom: 1em;
+    text-align: justify;
+}
+
+.imgs-korea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-namsan, .img-yonsei, .img-busan {
+    height: auto;
+    width: 30vw;   
+}
+
+
+
+/* Projects subpage */
+
+/* Grid for projects subpage  */
+
+.container-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    min-height: 50vh;
+}
+
+/* Divide first portion of projects subpage with Database description and images  */
+
+.db-container {
+    grid-column: span 3;
+    padding: 2em;
+    margin: 0;
+    background-color: #95aabf;
+}
+
+.description-p1 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.imgs-project1 {
+    justify-content: space-evenly;
+}
+
+.img-p1left {
+    padding-top: 1em;
+    width: 35vw;
+    float: left;
+}
+
+.img-p1tr {
+    padding-top: 1em;
+    width: 50vw;
+    float: right;
+    padding-bottom: 2em;
+}
+
+.img-p1br {
+    width: 50vw;
+    float: right;
+}
+
+/* Divide second portion of projects subpage with AWS description and images  */
+
+.aws-container {
+    grid-column: span 3;
+    padding: 2em;
+    padding-top: 1em;
+    margin: 0;
+    background-color: #95aabf;
+}
+
+.description-p2 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.img-p2t {
+    width: 95vw;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.img-p2b {
+    width: 95vw;
+}
+
+
+
+/* Resume subpage */
+
+/* Grid for resume subpage */
+
+.container-4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    min-height: 50vh;
+}
+
+/* Divide first portion for embedded resume pdf */
+
+.main-resume {
+    grid-column: span 3;
+    padding: 2em;
+    margin: 0;
+    margin-bottom: 0;
+    background-color: #95aabf;
+}
+
+embed {
+    padding-top: 1em;
+    width: 95vw;
+    height: 100vh;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <!-- 1 header and 1 body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <title>Projects</title>
+</head>
+<body class="nav-3-on">
+    <!-- Navigation Bar -->
+    <div class="container-3">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-1" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-2" href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-3" href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-4" href="./resume.html">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- First Project (Database Systems) -->
+        <div class="db-container">
+            <h1>my work</h1>
+            <p class="description-p1"><strong>Project 1:</strong> I created and tracked the metrics of a database of my choice with the use of SQLite.  For my project, I decided to generate a pasta factory database that tracked the following processes: customer orders, making of the pasta noodles in the factory, and order shipment. 
+                The left picture (Entity Relationship Diagram) displays how the entities are related and flow within the system. On the right, I created a database that illustrated a few analytics that may be important for the company. The top one illustrates the number of orders per pasta type
+                while the bottom represents the percentage of where orders come from by state.
+            </p>
+            <!-- Images for first project -->
+            <div class="imgs-project1">
+                <img class="img-p1left" src="../images/erdiagram.jpg" alt="Picture of Pasta Factory ER Diagram">
+                <img class="img-p1tr" src="../images/diagram.jpg" alt="Diagram of Total Orders of Each Pasta">
+                <img class="img-p1br" src="../images/diagram2.jpg" alt="Diagram of Percentage of Where Orders are From By State">
+            </div>
+        </div>
+        <!-- Second Project (AWS) -->
+        <div class="aws-container">
+            <p class="description-p2"><strong>Project 2:</strong> In Amazon Web Services (AWS), I created a virtual server, referred to EC2 instance, configured a VPN, and performed multiple tasks: administer, secure, and evaluate my EC2 instance.
+                For example, in the first picture, I set up an alarm that would send me an email when the "root" user account was utilized. This was necessary as this account had multiple permissions that may lead to unauthorized usage.  
+                The second picture includes running AWS Inspector to scan potential vulnerabilities and generate a solution, which streamlined the process of identifying and remediating possible risks.
+            </p>
+            <!-- Images for second project -->
+            <div class="project-2-imgs">
+                <img class="img-p2t" src="../images/cloudwatchalarm.jpg" alt="CloudWatch Alarm for Root Usage">
+                <img class="img-p2b" src="../images/vulnerabilities.jpg" alt="AWS Inspector Showing Vulnerabilities">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
